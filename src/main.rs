@@ -3,6 +3,7 @@ use std::time::Duration;
 
 mod orbital;
 mod energy;
+mod mission_state;
 
 fn main() {
     let mut model = orbital::OrbitalModel::new(10, 5);
