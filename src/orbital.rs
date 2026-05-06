@@ -1,3 +1,5 @@
+use crate::event_bus::{Event, EventBus};
+
 #[derive(Debug)]
 pub enum OrbitalPhase {
     SunPhase,
@@ -12,7 +14,6 @@ pub struct OrbitalModel {
     pub cycle_time: u32,
 }
 
-
 impl OrbitalModel {
     pub fn new(sun_time: u32, eclipse_time: u32) -> Self {
         Self {
@@ -23,25 +24,29 @@ impl OrbitalModel {
         }
     }
 
-    pub fn update (&mut self) {
+    pub fn update(&mut self, event_bus: &mut EventBus) {
+
         self.cycle_time += 1;
 
         if self.cycle_time > self.sun_time + self.eclipse_time {
             self.cycle_time = 1;
+            event_bus.emit(Event::OrbitCompleted);
         }
 
         if self.cycle_time <= self.sun_time {
             self.phase = OrbitalPhase::SunPhase;
+            if self.cycle_time == 1 {
+                event_bus.emit(Event::EnteredSun);
+            }
         } else {
             self.phase = OrbitalPhase::EclipsePhase;
+            if self.cycle_time == self.sun_time + 1 {
+                event_bus.emit(Event::EnteredEclipse);
+            }
         }
     }
 
-    pub fn orbit_completed (&self) -> bool {
-        if self.cycle_time == 15 {
-            true
-        } else {
-            false
-        }
+    pub fn orbit_completed(&self) -> bool {
+        if self.cycle_time == 15 { true } else { false }
     }
 }
