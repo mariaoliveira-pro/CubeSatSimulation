@@ -4,6 +4,11 @@ use std::time::Duration;
 mod orbital;
 mod energy;
 mod mission_state;
+mod event_bus;
+
+use orbital::OrbitalModel;
+use energy::EnergyModel;
+use event_bus::{EventBus};
 
 fn main() {
     let mut model = OrbitalModel::new(10, 5);
