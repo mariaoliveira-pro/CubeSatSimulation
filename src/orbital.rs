@@ -26,14 +26,22 @@ impl OrbitalModel {
     pub fn update (&mut self) {
         self.cycle_time += 1;
 
+        if self.cycle_time > self.sun_time + self.eclipse_time {
+            self.cycle_time = 1;
+        }
+
         if self.cycle_time <= self.sun_time {
             self.phase = OrbitalPhase::SunPhase;
         } else {
             self.phase = OrbitalPhase::EclipsePhase;
         }
+    }
 
-        if self.cycle_time >= self.sun_time + self.eclipse_time {
-            self.cycle_time = 0;
+    pub fn orbit_completed (&self) -> bool {
+        if self.cycle_time == 15 {
+            true
+        } else {
+            false
         }
     }
 }

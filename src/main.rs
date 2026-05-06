@@ -10,10 +10,10 @@ fn main() {
 
     for i in 0..20 {
         model.update();
-        energy_model.update(&model.phase);
+        energy_model.update(&model);
 
         println!("Passo: {} | Current phase: {:?} | Cycle time: {}\n", i, model.phase, model.cycle_time);
-        println!("Battery level: {:.2}%\n", energy_model.battery_level);
+        println!("Battery level: {:.2}% | battery capacity: {:.2}%\n", energy_model.battery_level, energy_model.max_capacity);
 
         thread::sleep(Duration::from_secs(1));
     }
