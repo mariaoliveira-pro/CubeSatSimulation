@@ -1,6 +1,6 @@
 use crate::event_bus::{Event, EventBus};
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 pub enum OrbitalPhase {
     SunPhase,
     EclipsePhase,
@@ -12,6 +12,7 @@ pub struct OrbitalModel {
     pub sun_time: u32,
     pub eclipse_time: u32,
     pub cycle_time: u32,
+    pub orbit_number: u32,
 }
 
 impl OrbitalModel {
@@ -21,6 +22,7 @@ impl OrbitalModel {
             sun_time,
             eclipse_time,
             cycle_time: 0,
+            orbit_number: 0,
         }
     }
 
@@ -30,6 +32,7 @@ impl OrbitalModel {
 
         if self.cycle_time > self.sun_time + self.eclipse_time {
             self.cycle_time = 1;
+            self.orbit_number += 1;
             event_bus.emit(Event::OrbitCompleted);
         }
 
@@ -47,6 +50,6 @@ impl OrbitalModel {
     }
 
     pub fn orbit_completed(&self) -> bool {
-        if self.cycle_time == 15 { true } else { false }
+        self.cycle_time == self.sun_time + self.eclipse_time
     }
 }
