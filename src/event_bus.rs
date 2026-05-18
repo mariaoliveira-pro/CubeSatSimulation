@@ -6,6 +6,8 @@ pub enum Event {
     BatteryLow,
     BatteryCritical,
     BatteryFull,
+    GroundStationContactStarted,
+    GroundStationContactEnded,
 }
 
 pub struct EventBus {
