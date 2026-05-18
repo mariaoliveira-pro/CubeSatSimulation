@@ -22,7 +22,7 @@ impl OrbitalModel {
             sun_time,
             eclipse_time,
             cycle_time: 0,
-            orbit_number: 0,
+            orbit_number: 1,
         }
     }
 
