@@ -53,6 +53,7 @@ impl Satellite {
         self.mission_state = self.mission_state.evaluate(
             self.energy_model.battery_level,
             self.energy_model.max_capacity,
+            false
         );
     }
 
@@ -98,5 +99,27 @@ impl Satellite {
 
     fn update_ground_station(&mut self, event_bus: &mut EventBus) {
         self.ground_station.update(&self.orbital_model, event_bus);
+    }
+
+    pub fn print_state(&self, tick: u32) {
+        println!("\nTick: {} | Satellite ID: {}", tick, self.id);
+        println!(
+            "Orbit: {} | Cycle time: {} | Phase: {:?}",
+            self.orbital_model.orbit_number,
+            self.orbital_model.cycle_time,
+            self.orbital_model.phase
+        );
+        println!(
+            "Battery: {:.2}% | Capacity: {:.2}% | Solar output: {:.2}",
+            self.energy_model.battery_level,
+            self.energy_model.max_capacity,
+            self.energy_model.solar_panel_output
+        );
+        println!(
+            "Ground contact: {} | Mission state: {:?} | Operational mode: {:?}",
+            self.ground_station.contact_active,
+            self.mission_state,
+            self.operational_mode
+        );
     }
 }
