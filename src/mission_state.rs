@@ -9,11 +9,11 @@ pub enum MissionState {
 }
 
 impl MissionState {
-    pub fn evaluate(&self, battery_level: f32, battery_capacity: f32) -> MissionState {
+    pub fn evaluate(&self, battery_level: f32, battery_capacity: f32, anomaly: bool) -> MissionState {
         match self {
             _ if battery_capacity < 10.0 => MissionState::EndOfLife,
+            _ if anomaly=> MissionState::SafeMode,
             MissionState::SafeMode => MissionState::SafeMode,
-            //_ if anomalia=> MissionState::SafeMode,
             MissionState::LowPower if battery_level >= 50.0 => MissionState::Nominal,
             _ if battery_level < 25.0 => MissionState::LowPower,
             MissionState::Commissioning => MissionState::Nominal,
