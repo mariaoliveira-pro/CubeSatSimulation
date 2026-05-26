@@ -7,9 +7,10 @@ mod mission_state;
 mod orbital;
 mod satellite;
 mod simulation;
+mod network;
 
 fn main() {
-    let mut sim = Simulation::new(1, 100);
+    let mut sim = Simulation::new(1, 200);
     sim.run();
    
 }
