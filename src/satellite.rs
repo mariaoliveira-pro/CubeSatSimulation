@@ -3,6 +3,7 @@ use crate::event_bus::EventBus;
 use crate::ground_station::GroundStation;
 use crate::mission_state::MissionState;
 use crate::orbital::{OrbitalModel, OrbitalPhase};
+use crate::network::Network;
 
 #[derive(Debug, Clone, Copy)]
 pub enum OperationalMode {
