@@ -5,4 +5,8 @@ edition = "2024"
 
 [dependencies]
 rand = "0.8"
-    
+opentelemetry = "0.27"
+opentelemetry_sdk = { version = "0.27", features = ["rt-tokio"] }
+opentelemetry-otlp = { version = "0.27", features = ["grpc-tonic"] }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"
