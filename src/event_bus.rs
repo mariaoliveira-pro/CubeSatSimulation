@@ -9,7 +9,7 @@ pub enum Event {
     GroundStationContactStarted,
     GroundStationContactEnded,
     TransmissionSuccess,
-    TransmisionFailed,
+    TransmissionFailed,
 }
 
 pub struct EventBus {

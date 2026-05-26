@@ -26,7 +26,8 @@ impl Simulation {
     }
 
     pub fn step(&mut self ) {
-        self.satellite.update(&mut self.event_bus);
+        self.satellite.update(&mut self.event_bus, self.tick);
+        self.satellite.network.receive(self.tick, &mut self.event_bus);
         self.satellite.print_state(self.tick);
         self.event_bus.process();
         self.tick += 1;

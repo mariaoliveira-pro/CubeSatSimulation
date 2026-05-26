@@ -1,5 +1,6 @@
 use crate::event_bus::{Event, EventBus};
 use crate::orbital;
+use crate::satellite::OperationalMode;
 
 #[derive(Debug)]
 pub struct EnergyModel {
@@ -21,7 +22,7 @@ impl EnergyModel {
         }
     }
 
-    pub fn update(&mut self, orbital_model: &orbital::OrbitalModel, event_bus: &mut EventBus) {
+    pub fn update(&mut self, orbital_model: &orbital::OrbitalModel, operational_mode: &OperationalMode, event_bus: &mut EventBus) {
 
         let previous_battery_level = self.battery_level;
 
@@ -30,15 +31,20 @@ impl EnergyModel {
             self.max_capacity = self.max_capacity.max(0.0);
         }
 
+        let extra_consuption = match operational_mode {
+            OperationalMode::Transmitting => 0.5,
+            _ => 0.0,
+        };
+
         match orbital_model.phase {
             orbital::OrbitalPhase::SunPhase => {
-                self.solar_panel_output = 4.0;
+                self.solar_panel_output = 1.2; 
                 self.battery_level =
-                    self.battery_level + self.solar_panel_output - self.consumption_rate;
+                    self.battery_level + self.solar_panel_output - self.consumption_rate - extra_consuption;
             }
             orbital::OrbitalPhase::EclipsePhase => {
                 self.solar_panel_output = 0.0;
-                self.battery_level = self.battery_level - self.consumption_rate;
+                self.battery_level = self.battery_level - self.consumption_rate - extra_consuption;
             }
         }
 

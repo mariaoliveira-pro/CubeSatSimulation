@@ -13,9 +13,9 @@
         pub fn new(pass_every_n_orbits: u32, contact_duration: u32) -> Self {
             Self {
                 contact_active: false,
-                contact_start_tick: 3, //manter 3 para testes, depois mudar para 20
-                contact_duration: contact_duration, //recebe do satellite
-                pass_every_n_orbits: pass_every_n_orbits, //também recebe do satellite
+                contact_start_tick: 15, 
+                contact_duration: contact_duration, 
+                pass_every_n_orbits: pass_every_n_orbits, 
             }
         }
 
