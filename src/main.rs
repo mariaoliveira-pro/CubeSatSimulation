@@ -12,5 +12,5 @@ mod network;
 fn main() {
     let mut sim = Simulation::new(1, 200);
     sim.run();
-   
+
 }

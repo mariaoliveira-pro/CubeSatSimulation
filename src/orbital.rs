@@ -13,16 +13,20 @@ pub struct OrbitalModel {
     pub eclipse_time: u32,
     pub cycle_time: u32,
     pub orbit_number: u32,
+    pub altitude_km: f32,
+    pub orbital_period_minutes: f32,
 }
 
 impl OrbitalModel {
     pub fn new(sun_time: u32, eclipse_time: u32) -> Self {
         Self {
             phase: OrbitalPhase::SunPhase,
-            sun_time,
-            eclipse_time,
+            sun_time: sun_time,
+            eclipse_time: eclipse_time,
             cycle_time: 0,
             orbit_number: 1,
+            altitude_km: 500.0,
+            orbital_period_minutes: 94.6,
         }
     }
 
