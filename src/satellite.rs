@@ -1,5 +1,5 @@
 use crate::energy::EnergyModel;
-use crate::event_bus::EventBus;
+use crate::event_bus::{EventBus, Event};
 use crate::ground_station::GroundStation;
 use crate::mission_state::MissionState;
 use crate::orbital::{OrbitalModel, OrbitalPhase};
@@ -21,6 +21,8 @@ pub struct Satellite {
     pub operational_mode: OperationalMode,
     pub ground_station: GroundStation,
     pub network: Network,
+    pub temperature_celsius: f32,
+    pub anomaly_active: bool,
 }
 
 impl Satellite {
@@ -33,16 +35,21 @@ impl Satellite {
             operational_mode: OperationalMode::Idle,
             ground_station: GroundStation::new(5, 3), //contacto=3 para testes, depois mudar para 8
             network: Network::new(),
+            temperature_celsius: 20.0,
+            anomaly_active: false,
         }
     }
 
     pub fn update(&mut self, event_bus: &mut EventBus, tick: u32) {
         self.update_orbital_model(event_bus);
         self.update_ground_station(event_bus);
+
         self.update_operational_mode(tick);
         self.update_energy_model(event_bus);
-        self.update_mission_state();
+        self.update_temperature(event_bus);
 
+        self.update_mission_state();
+        self.update_operational_mode(tick); //duas vezes para garantir que o modo operacional se ajusta ao estado da missão atualizado
     }
 
     fn update_orbital_model(&mut self, event_bus: &mut EventBus) {
@@ -57,7 +64,7 @@ impl Satellite {
         self.mission_state = self.mission_state.evaluate(
             self.energy_model.battery_level,
             self.energy_model.max_capacity,
-            false
+            self.anomaly_active,
         );
     }
 
@@ -107,10 +114,48 @@ impl Satellite {
             }
         }
     }
-    
+
 
     fn update_ground_station(&mut self, event_bus: &mut EventBus) {
         self.ground_station.update(&self.orbital_model, event_bus);
+    }
+
+    fn update_temperature(&mut self, event_bus: &mut EventBus) {
+
+        let previous_anomaly = self.anomaly_active;
+
+        match self.orbital_model.phase {
+            OrbitalPhase::SunPhase => {
+                self.temperature_celsius += 0.20;
+            }
+            OrbitalPhase::EclipsePhase => {
+                self.temperature_celsius -= 0.15;
+            }
+        }
+
+        if matches!(self.operational_mode, OperationalMode::Charging) {
+            self.temperature_celsius += 0.03;
+        }
+
+        if matches!(self.operational_mode, OperationalMode::Transmitting) {
+            self.temperature_celsius += 0.09;
+        }
+
+        self.temperature_celsius = self.temperature_celsius.clamp(-40.0, 85.0);
+
+        self.anomaly_active = self.temperature_celsius >= 65.0 || self.temperature_celsius <= -25.0;
+
+        if !previous_anomaly && self.anomaly_active {
+            event_bus.emit(Event::TemperatureCritical);
+        }
+    }
+
+     pub fn print_mission_info(&self) {
+        println!(
+            "CubeSat Simulation | Altitude: {:.1} km | Period: {:.1} min",
+            self.orbital_model.altitude_km,
+            self.orbital_model.orbital_period_minutes
+        );
     }
 
     pub fn print_state(&self, tick: u32) {
@@ -133,5 +178,6 @@ impl Satellite {
             self.mission_state,
             self.operational_mode
         );
+        println!("Temperature: {:.2}°C | Anomaly active: {}", self.temperature_celsius, self.anomaly_active);
     }
 }

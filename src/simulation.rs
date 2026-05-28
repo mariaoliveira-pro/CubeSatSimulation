@@ -1,5 +1,7 @@
 use crate::satellite::Satellite;
 use crate::event_bus::EventBus;
+use std::thread;
+use std::time::Duration;
 
 pub struct Simulation {
     pub satellite: Satellite,
@@ -20,6 +22,7 @@ impl Simulation {
         }
 
     pub fn run(&mut self) {
+        self.satellite.print_mission_info();
         while self.tick < self.total_ticks {
             self.step();
         }
@@ -31,5 +34,7 @@ impl Simulation {
         self.satellite.print_state(self.tick);
         self.event_bus.process();
         self.tick += 1;
+
+        thread::sleep(Duration::from_millis(300));
     }
 }
