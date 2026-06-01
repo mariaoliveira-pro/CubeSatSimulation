@@ -4,13 +4,14 @@ pub enum Event {
     EnteredSun,
     EnteredEclipse,
     BatteryLow,
-    BatteryCritical,
+    BatteryCritical, //anomalia?
     BatteryFull,
+    BatteryDegraded, //anomalia?
     GroundStationContactStarted,
     GroundStationContactEnded,
     TransmissionSuccess,
-    TransmissionFailed,
-    TemperatureCritical,
+    TransmissionFailed,  //anomalia?
+    TemperatureCritical, //anomalia ja feita
 }
 
 pub struct EventBus {
@@ -19,9 +20,7 @@ pub struct EventBus {
 
 impl EventBus {
     pub fn new() -> Self {
-        Self {
-            events: Vec::new(),
-        }
+        Self { events: Vec::new() }
     }
 
     pub fn emit(&mut self, event: Event) {

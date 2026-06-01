@@ -1,9 +1,9 @@
 use crate::energy::EnergyModel;
-use crate::event_bus::{EventBus, Event};
+use crate::event_bus::{Event, EventBus};
 use crate::ground_station::GroundStation;
 use crate::mission_state::MissionState;
-use crate::orbital::{OrbitalModel, OrbitalPhase};
 use crate::network::Network;
+use crate::orbital::{OrbitalModel, OrbitalPhase};
 
 #[derive(Debug, Clone, Copy)]
 pub enum OperationalMode {
@@ -41,15 +41,25 @@ impl Satellite {
     }
 
     pub fn update(&mut self, event_bus: &mut EventBus, tick: u32) {
+        //atualiza ambiente
         self.update_orbital_model(event_bus);
         self.update_ground_station(event_bus);
 
-        self.update_operational_mode(tick);
-        self.update_energy_model(event_bus);
-        self.update_temperature(event_bus);
-
+        //escolhe modo com base no ambiente
         self.update_mission_state();
-        self.update_operational_mode(tick); //duas vezes para garantir que o modo operacional se ajusta ao estado da missão atualizado
+        self.update_operational_mode();
+
+        //aplicar os efeitos do modo em que está
+        self.update_energy_model(event_bus);
+        let anomaly_changed = self.update_temperature(event_bus);
+
+        if anomaly_changed {
+            // verificar se os efeitos causaram problemas (anomalias) ou mudar de estado
+            self.update_mission_state();
+            self.update_operational_mode(); //duas vezes para garantir que o modo operacional se ajusta ao estado da missão atualizado
+        }
+
+        self.send_data(tick);
     }
 
     fn update_orbital_model(&mut self, event_bus: &mut EventBus) {
@@ -57,7 +67,8 @@ impl Satellite {
     }
 
     fn update_energy_model(&mut self, event_bus: &mut EventBus) {
-        self.energy_model.update(&self.orbital_model, &self.operational_mode, event_bus);
+        self.energy_model
+            .update(&self.orbital_model, &self.operational_mode, event_bus);
     }
 
     fn update_mission_state(&mut self) {
@@ -68,7 +79,7 @@ impl Satellite {
         );
     }
 
-    fn update_operational_mode(&mut self, tick: u32) {
+    fn update_operational_mode(&mut self) {
         match self.mission_state {
             MissionState::Leop => {
                 self.operational_mode = OperationalMode::Idle;
@@ -89,7 +100,7 @@ impl Satellite {
             MissionState::LowPower => {
                 if matches!(self.orbital_model.phase, OrbitalPhase::SunPhase) {
                     self.operational_mode = OperationalMode::Charging;
-                } else  {
+                } else {
                     self.operational_mode = OperationalMode::Idle;
                 }
             }
@@ -97,13 +108,6 @@ impl Satellite {
             MissionState::Nominal => {
                 if self.ground_station.contact_active {
                     self.operational_mode = OperationalMode::Transmitting;
-                    let battery_level = self.energy_model.battery_level;
-                    let battery_capacity = self.energy_model.max_capacity;
-                    let orbit_number = self.orbital_model.orbit_number;
-                    let mission_state = self.mission_state;
-                    let operational_mode = self.operational_mode;
-                    let solar_panel_output = self.energy_model.solar_panel_output;
-                    self.network.send_data(battery_level, battery_capacity, orbit_number, mission_state, operational_mode, solar_panel_output, tick);
                 } else {
                     if matches!(self.orbital_model.phase, OrbitalPhase::SunPhase) {
                         self.operational_mode = OperationalMode::Charging;
@@ -115,21 +119,28 @@ impl Satellite {
         }
     }
 
-
     fn update_ground_station(&mut self, event_bus: &mut EventBus) {
         self.ground_station.update(&self.orbital_model, event_bus);
     }
 
-    fn update_temperature(&mut self, event_bus: &mut EventBus) {
-
+    fn update_temperature(&mut self, event_bus: &mut EventBus) -> bool {
         let previous_anomaly = self.anomaly_active;
 
         match self.orbital_model.phase {
             OrbitalPhase::SunPhase => {
-                self.temperature_celsius += 0.20;
+                if matches!(self.mission_state, MissionState::SafeMode) {
+                    self.temperature_celsius += 0.05;
+                } else {
+                    self.temperature_celsius += 0.20;
+                }
             }
+
             OrbitalPhase::EclipsePhase => {
-                self.temperature_celsius -= 0.15;
+                if matches!(self.mission_state, MissionState::SafeMode) {
+                    self.temperature_celsius -= 0.35;
+                } else {
+                    self.temperature_celsius -= 0.15;
+                }
             }
         }
 
@@ -143,18 +154,45 @@ impl Satellite {
 
         self.temperature_celsius = self.temperature_celsius.clamp(-40.0, 85.0);
 
-        self.anomaly_active = self.temperature_celsius >= 65.0 || self.temperature_celsius <= -25.0;
+        if self.temperature_celsius >= 65.0 {
+            self.anomaly_active = true;
+        }
+
+        if self.temperature_celsius <= 60.0 {
+            self.anomaly_active = false;
+        }
 
         if !previous_anomaly && self.anomaly_active {
             event_bus.emit(Event::TemperatureCritical);
         }
+
+        previous_anomaly != self.anomaly_active
     }
 
-     pub fn print_mission_info(&self) {
+    fn send_data(&mut self, tick: u32) {
+        if matches!(self.operational_mode, OperationalMode::Transmitting) {
+            let battery_level = self.energy_model.battery_level;
+            let battery_capacity = self.energy_model.max_capacity;
+            let orbit_number = self.orbital_model.orbit_number;
+            let mission_state = self.mission_state;
+            let operational_mode = self.operational_mode;
+            let solar_panel_output = self.energy_model.solar_panel_output;
+            self.network.send_data(
+                battery_level,
+                battery_capacity,
+                orbit_number,
+                mission_state,
+                operational_mode,
+                solar_panel_output,
+                tick,
+            );
+        }
+    }
+
+    pub fn print_mission_info(&self) {
         println!(
             "CubeSat Simulation | Altitude: {:.1} km | Period: {:.1} min",
-            self.orbital_model.altitude_km,
-            self.orbital_model.orbital_period_minutes
+            self.orbital_model.altitude_km, self.orbital_model.orbital_period_minutes
         );
     }
 
@@ -174,10 +212,11 @@ impl Satellite {
         );
         println!(
             "Ground contact: {} | Mission state: {:?} | Operational mode: {:?}",
-            self.ground_station.contact_active,
-            self.mission_state,
-            self.operational_mode
+            self.ground_station.contact_active, self.mission_state, self.operational_mode
         );
-        println!("Temperature: {:.2}°C | Anomaly active: {}", self.temperature_celsius, self.anomaly_active);
+        println!(
+            "Temperature: {:.2}°C | Anomaly active: {}",
+            self.temperature_celsius, self.anomaly_active
+        );
     }
 }
