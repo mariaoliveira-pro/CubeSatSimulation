@@ -15,7 +15,7 @@ impl EnergyModel {
         Self {
             battery_level: 100.0,
             solar_panel_output: 0.0,
-            degradation_rate: 0.01,
+            degradation_rate: 0.5,
             max_capacity: 100.0,
         }
     }
@@ -27,10 +27,15 @@ impl EnergyModel {
         event_bus: &mut EventBus,
     ) {
         let previous_battery_level = self.battery_level;
+        let previous_max_capacity = self.max_capacity;
 
         if orbital_model.orbit_completed() {
             self.max_capacity -= self.degradation_rate;
             self.max_capacity = self.max_capacity.max(0.0);
+        }
+
+        if previous_max_capacity > 30.0 && self.max_capacity <= 30.0 {
+            event_bus.emit(Event::BatteryDegraded);
         }
 
         let mode_consumption = match operational_mode {
