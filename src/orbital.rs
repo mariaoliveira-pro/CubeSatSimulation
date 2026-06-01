@@ -31,7 +31,6 @@ impl OrbitalModel {
     }
 
     pub fn update(&mut self, event_bus: &mut EventBus) {
-
         self.cycle_time += 1;
 
         if self.cycle_time > self.sun_time + self.eclipse_time {
