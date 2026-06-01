@@ -137,9 +137,9 @@ impl Satellite {
 
             OrbitalPhase::EclipsePhase => {
                 if matches!(self.mission_state, MissionState::SafeMode) {
-                    self.temperature_celsius -= 0.35;
+                    self.temperature_celsius -= 0.30;
                 } else {
-                    self.temperature_celsius -= 0.15;
+                    self.temperature_celsius -= 0.17;
                 }
             }
         }
