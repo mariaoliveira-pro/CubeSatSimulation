@@ -34,14 +34,14 @@ impl EnergyModel {
         }
 
         let mode_consumption = match operational_mode {
-            OperationalMode::Idle => 0.4,
-            OperationalMode::Charging => 0.8,
-            OperationalMode::Transmitting => 1.8,
+            OperationalMode::Idle => 0.6,
+            OperationalMode::Charging => 0.5,
+            OperationalMode::Transmitting => 1.0,
         };
 
         match orbital_model.phase {
             orbital::OrbitalPhase::SunPhase => {
-                self.solar_panel_output = 1.2;
+                self.solar_panel_output = 0.8;
                 self.battery_level = self.battery_level + self.solar_panel_output - mode_consumption;
             }
             orbital::OrbitalPhase::EclipsePhase => {

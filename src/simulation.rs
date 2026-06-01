@@ -1,5 +1,6 @@
 use crate::satellite::Satellite;
 use crate::event_bus::EventBus;
+use crate::telemetry::Telemetry;
 use std::thread;
 use std::time::Duration;
 
@@ -8,6 +9,7 @@ pub struct Simulation {
     pub event_bus: EventBus,
     pub tick: u32,
     pub total_ticks: u32,
+    pub telemetry: Telemetry,
 }
 
 impl Simulation {
@@ -17,6 +19,7 @@ impl Simulation {
             event_bus: EventBus::new(),
             tick,
             total_ticks,
+            telemetry: Telemetry::new(),
             }
 
         }
@@ -33,8 +36,9 @@ impl Simulation {
         self.satellite.network.receive(self.tick, &mut self.event_bus);
         self.satellite.print_state(self.tick);
         self.event_bus.process();
+        self.telemetry.record(&self.satellite);
         self.tick += 1;
 
-        thread::sleep(Duration::from_millis(300));
+        thread::sleep(Duration::from_millis(100));
     }
 }

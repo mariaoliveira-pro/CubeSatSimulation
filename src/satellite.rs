@@ -126,10 +126,10 @@ impl Satellite {
 
         match self.orbital_model.phase {
             OrbitalPhase::SunPhase => {
-                self.temperature_celsius += 0.20;
+                self.temperature_celsius += 0.10;
             }
             OrbitalPhase::EclipsePhase => {
-                self.temperature_celsius -= 0.15;
+                self.temperature_celsius -= 0.17;
             }
         }
 

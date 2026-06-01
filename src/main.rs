@@ -8,10 +8,11 @@ mod orbital;
 mod satellite;
 mod simulation;
 mod network;
+mod telemetry;
 
 #[tokio::main]
 async fn main() {
-    let mut sim = Simulation::new(1, 200);
+    let mut sim = Simulation::new(1, 6000);
     sim.run();
 
 }
