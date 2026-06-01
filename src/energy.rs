@@ -47,7 +47,8 @@ impl EnergyModel {
         match orbital_model.phase {
             orbital::OrbitalPhase::SunPhase => {
                 self.solar_panel_output = 0.8;
-                self.battery_level = self.battery_level + self.solar_panel_output - mode_consumption;
+                self.battery_level =
+                    self.battery_level + self.solar_panel_output - mode_consumption;
             }
             orbital::OrbitalPhase::EclipsePhase => {
                 self.solar_panel_output = 0.0;

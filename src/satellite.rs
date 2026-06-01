@@ -12,6 +12,13 @@ pub enum OperationalMode {
     Transmitting,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub enum ThermalState {
+    Normal,
+    TooHot,
+    TooCold,
+}
+
 #[derive(Debug)]
 pub struct Satellite {
     pub id: u32,
@@ -22,6 +29,7 @@ pub struct Satellite {
     pub ground_station: GroundStation,
     pub network: Network,
     pub temperature_celsius: f32,
+    pub thermal_state: ThermalState,
     pub anomaly_active: bool,
 }
 
@@ -33,9 +41,10 @@ impl Satellite {
             energy_model: EnergyModel::new(),
             mission_state: MissionState::Leop,
             operational_mode: OperationalMode::Idle,
-            ground_station: GroundStation::new(5, 3), //contacto=3 para testes, depois mudar para 8
+            ground_station: GroundStation::new(5, 8), //contacto=3 para testes, depois mudar para 8
             network: Network::new(),
             temperature_celsius: 20.0,
+            thermal_state: ThermalState::Normal,
             anomaly_active: false,
         }
     }
@@ -125,18 +134,27 @@ impl Satellite {
 
     fn update_temperature(&mut self, event_bus: &mut EventBus) -> bool {
         let previous_anomaly = self.anomaly_active;
+        let previous_thermal_state = self.thermal_state;
 
         match self.orbital_model.phase {
             OrbitalPhase::SunPhase => {
-                if matches!(self.mission_state, MissionState::SafeMode) {
-                    self.temperature_celsius += 0.05;
+                if matches!(self.mission_state, MissionState::SafeMode)
+                    && self.thermal_state == ThermalState::TooHot
+                {
+                    self.temperature_celsius += 0.05; //aquece menos para recuperar
                 } else {
                     self.temperature_celsius += 0.20;
                 }
             }
 
             OrbitalPhase::EclipsePhase => {
-                if matches!(self.mission_state, MissionState::SafeMode) {
+                if matches!(self.mission_state, MissionState::SafeMode)
+                    && self.thermal_state == ThermalState::TooCold
+                {
+                    self.temperature_celsius += 0.05; //tenta aquecer para voltar à normalidade
+                } else if matches!(self.mission_state, MissionState::SafeMode)
+                    && self.thermal_state == ThermalState::TooHot
+                {
                     self.temperature_celsius -= 0.30;
                 } else {
                     self.temperature_celsius -= 0.17;
@@ -155,15 +173,32 @@ impl Satellite {
         self.temperature_celsius = self.temperature_celsius.clamp(-40.0, 85.0);
 
         if self.temperature_celsius >= 65.0 {
+            self.thermal_state = ThermalState::TooHot;
+            self.anomaly_active = true;
+        } else if self.temperature_celsius <= -25.0 {
+            self.thermal_state = ThermalState::TooCold;
             self.anomaly_active = true;
         }
 
-        if self.temperature_celsius <= 60.0 {
-            self.anomaly_active = false;
+        //deixar um intervalo de 10 para margem
+        if self.thermal_state == ThermalState::TooHot && self.temperature_celsius <= 55.0 {
+            self.thermal_state = ThermalState::Normal;
+        } else if self.thermal_state == ThermalState::TooCold && self.temperature_celsius >= -15.0 {
+            self.thermal_state = ThermalState::Normal;
         }
 
-        if !previous_anomaly && self.anomaly_active {
-            event_bus.emit(Event::TemperatureCritical);
+        self.anomaly_active = self.thermal_state != ThermalState::Normal;
+
+        if previous_thermal_state == ThermalState::Normal
+            && self.thermal_state == ThermalState::TooHot
+        {
+            event_bus.emit(Event::TemperatureTooHigh);
+        }
+
+        if previous_thermal_state == ThermalState::Normal
+            && self.thermal_state == ThermalState::TooCold
+        {
+            event_bus.emit(Event::TemperatureTooLow);
         }
 
         previous_anomaly != self.anomaly_active
@@ -215,8 +250,8 @@ impl Satellite {
             self.ground_station.contact_active, self.mission_state, self.operational_mode
         );
         println!(
-            "Temperature: {:.2}°C | Anomaly active: {}",
-            self.temperature_celsius, self.anomaly_active
+            "Temperature: {:.2}°C | Thermal state: {:?} | Anomaly active: {}",
+            self.temperature_celsius, self.thermal_state, self.anomaly_active
         );
     }
 }

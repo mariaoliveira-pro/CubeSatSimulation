@@ -4,14 +4,15 @@ pub enum Event {
     EnteredSun,
     EnteredEclipse,
     BatteryLow,
-    BatteryCritical, //anomalia?
+    BatteryCritical, 
     BatteryFull,
-    BatteryDegraded, //anomalia?
+    BatteryDegraded,
     GroundStationContactStarted,
     GroundStationContactEnded,
     TransmissionSuccess,
-    TransmissionFailed,  //anomalia?
-    TemperatureCritical, //anomalia ja feita
+    TransmissionFailed,
+    TemperatureTooHigh,
+    TemperatureTooLow,
 }
 
 pub struct EventBus {
