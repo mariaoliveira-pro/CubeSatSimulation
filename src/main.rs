@@ -13,5 +13,5 @@ mod network;
 async fn main() {
     let mut sim = Simulation::new(1, 200);
     sim.run();
-   
+
 }

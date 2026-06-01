@@ -1,0 +1,1210 @@
+
+Tick: 1 | Satellite ID: 1
+Orbit: 1 | Cycle time: 1 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Commissioning | Operational mode: Idle
+Temperature: 20.20°C
+EVENT: EnteredSun
+
+
+Tick: 2 | Satellite ID: 1
+Orbit: 1 | Cycle time: 2 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 20.40°C
+
+Tick: 3 | Satellite ID: 1
+Orbit: 1 | Cycle time: 3 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 20.63°C
+
+Tick: 4 | Satellite ID: 1
+Orbit: 1 | Cycle time: 4 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 20.86°C
+
+Tick: 5 | Satellite ID: 1
+Orbit: 1 | Cycle time: 5 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 21.09°C
+
+Tick: 6 | Satellite ID: 1
+Orbit: 1 | Cycle time: 6 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 21.32°C
+
+Tick: 7 | Satellite ID: 1
+Orbit: 1 | Cycle time: 7 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 21.55°C
+
+Tick: 8 | Satellite ID: 1
+Orbit: 1 | Cycle time: 8 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 21.78°C
+
+Tick: 9 | Satellite ID: 1
+Orbit: 1 | Cycle time: 9 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 22.01°C
+
+Tick: 10 | Satellite ID: 1
+Orbit: 1 | Cycle time: 10 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 22.24°C
+
+Tick: 11 | Satellite ID: 1
+Orbit: 1 | Cycle time: 11 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 22.47°C
+
+Tick: 12 | Satellite ID: 1
+Orbit: 1 | Cycle time: 12 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 22.70°C
+
+Tick: 13 | Satellite ID: 1
+Orbit: 1 | Cycle time: 13 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 22.93°C
+
+Tick: 14 | Satellite ID: 1
+Orbit: 1 | Cycle time: 14 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 23.16°C
+
+Tick: 15 | Satellite ID: 1
+Orbit: 1 | Cycle time: 15 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 23.39°C
+
+Tick: 16 | Satellite ID: 1
+Orbit: 1 | Cycle time: 16 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 23.62°C
+
+Tick: 17 | Satellite ID: 1
+Orbit: 1 | Cycle time: 17 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 23.85°C
+
+Tick: 18 | Satellite ID: 1
+Orbit: 1 | Cycle time: 18 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 24.08°C
+
+Tick: 19 | Satellite ID: 1
+Orbit: 1 | Cycle time: 19 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 24.31°C
+
+Tick: 20 | Satellite ID: 1
+Orbit: 1 | Cycle time: 20 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 24.54°C
+
+Tick: 21 | Satellite ID: 1
+Orbit: 1 | Cycle time: 21 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 24.77°C
+
+Tick: 22 | Satellite ID: 1
+Orbit: 1 | Cycle time: 22 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 25.00°C
+
+Tick: 23 | Satellite ID: 1
+Orbit: 1 | Cycle time: 23 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 25.23°C
+
+Tick: 24 | Satellite ID: 1
+Orbit: 1 | Cycle time: 24 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 25.46°C
+
+Tick: 25 | Satellite ID: 1
+Orbit: 1 | Cycle time: 25 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 25.69°C
+
+Tick: 26 | Satellite ID: 1
+Orbit: 1 | Cycle time: 26 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 25.92°C
+
+Tick: 27 | Satellite ID: 1
+Orbit: 1 | Cycle time: 27 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 26.15°C
+
+Tick: 28 | Satellite ID: 1
+Orbit: 1 | Cycle time: 28 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 26.38°C
+
+Tick: 29 | Satellite ID: 1
+Orbit: 1 | Cycle time: 29 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 26.61°C
+
+Tick: 30 | Satellite ID: 1
+Orbit: 1 | Cycle time: 30 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 26.84°C
+
+Tick: 31 | Satellite ID: 1
+Orbit: 1 | Cycle time: 31 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 27.07°C
+
+Tick: 32 | Satellite ID: 1
+Orbit: 1 | Cycle time: 32 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 27.30°C
+
+Tick: 33 | Satellite ID: 1
+Orbit: 1 | Cycle time: 33 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 27.53°C
+
+Tick: 34 | Satellite ID: 1
+Orbit: 1 | Cycle time: 34 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 27.76°C
+
+Tick: 35 | Satellite ID: 1
+Orbit: 1 | Cycle time: 35 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 27.99°C
+
+Tick: 36 | Satellite ID: 1
+Orbit: 1 | Cycle time: 36 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 28.22°C
+
+Tick: 37 | Satellite ID: 1
+Orbit: 1 | Cycle time: 37 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 28.45°C
+
+Tick: 38 | Satellite ID: 1
+Orbit: 1 | Cycle time: 38 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 28.68°C
+
+Tick: 39 | Satellite ID: 1
+Orbit: 1 | Cycle time: 39 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 28.91°C
+
+Tick: 40 | Satellite ID: 1
+Orbit: 1 | Cycle time: 40 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.14°C
+
+Tick: 41 | Satellite ID: 1
+Orbit: 1 | Cycle time: 41 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.37°C
+
+Tick: 42 | Satellite ID: 1
+Orbit: 1 | Cycle time: 42 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.60°C
+
+Tick: 43 | Satellite ID: 1
+Orbit: 1 | Cycle time: 43 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.83°C
+
+Tick: 44 | Satellite ID: 1
+Orbit: 1 | Cycle time: 44 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.06°C
+
+Tick: 45 | Satellite ID: 1
+Orbit: 1 | Cycle time: 45 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.29°C
+
+Tick: 46 | Satellite ID: 1
+Orbit: 1 | Cycle time: 46 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.52°C
+
+Tick: 47 | Satellite ID: 1
+Orbit: 1 | Cycle time: 47 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.75°C
+
+Tick: 48 | Satellite ID: 1
+Orbit: 1 | Cycle time: 48 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.98°C
+
+Tick: 49 | Satellite ID: 1
+Orbit: 1 | Cycle time: 49 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.21°C
+
+Tick: 50 | Satellite ID: 1
+Orbit: 1 | Cycle time: 50 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.44°C
+
+Tick: 51 | Satellite ID: 1
+Orbit: 1 | Cycle time: 51 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.67°C
+
+Tick: 52 | Satellite ID: 1
+Orbit: 1 | Cycle time: 52 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.90°C
+
+Tick: 53 | Satellite ID: 1
+Orbit: 1 | Cycle time: 53 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.13°C
+
+Tick: 54 | Satellite ID: 1
+Orbit: 1 | Cycle time: 54 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.36°C
+
+Tick: 55 | Satellite ID: 1
+Orbit: 1 | Cycle time: 55 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.59°C
+
+Tick: 56 | Satellite ID: 1
+Orbit: 1 | Cycle time: 56 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.82°C
+
+Tick: 57 | Satellite ID: 1
+Orbit: 1 | Cycle time: 57 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.05°C
+
+Tick: 58 | Satellite ID: 1
+Orbit: 1 | Cycle time: 58 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.28°C
+
+Tick: 59 | Satellite ID: 1
+Orbit: 1 | Cycle time: 59 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.51°C
+
+Tick: 60 | Satellite ID: 1
+Orbit: 1 | Cycle time: 60 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.74°C
+
+Tick: 61 | Satellite ID: 1
+Orbit: 1 | Cycle time: 61 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.97°C
+
+Tick: 62 | Satellite ID: 1
+Orbit: 1 | Cycle time: 62 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 100.00% | Capacity: 100.00% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 34.20°C
+
+Tick: 63 | Satellite ID: 1
+Orbit: 1 | Cycle time: 63 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 34.05°C
+EVENT: EnteredEclipse
+
+
+Tick: 64 | Satellite ID: 1
+Orbit: 1 | Cycle time: 64 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.90°C
+
+Tick: 65 | Satellite ID: 1
+Orbit: 1 | Cycle time: 65 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.75°C
+
+Tick: 66 | Satellite ID: 1
+Orbit: 1 | Cycle time: 66 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.60°C
+
+Tick: 67 | Satellite ID: 1
+Orbit: 1 | Cycle time: 67 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.45°C
+
+Tick: 68 | Satellite ID: 1
+Orbit: 1 | Cycle time: 68 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.30°C
+
+Tick: 69 | Satellite ID: 1
+Orbit: 1 | Cycle time: 69 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.15°C
+
+Tick: 70 | Satellite ID: 1
+Orbit: 1 | Cycle time: 70 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 33.00°C
+
+Tick: 71 | Satellite ID: 1
+Orbit: 1 | Cycle time: 71 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.85°C
+
+Tick: 72 | Satellite ID: 1
+Orbit: 1 | Cycle time: 72 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.70°C
+
+Tick: 73 | Satellite ID: 1
+Orbit: 1 | Cycle time: 73 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.55°C
+
+Tick: 74 | Satellite ID: 1
+Orbit: 1 | Cycle time: 74 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.40°C
+
+Tick: 75 | Satellite ID: 1
+Orbit: 1 | Cycle time: 75 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.25°C
+
+Tick: 76 | Satellite ID: 1
+Orbit: 1 | Cycle time: 76 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 32.10°C
+
+Tick: 77 | Satellite ID: 1
+Orbit: 1 | Cycle time: 77 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.95°C
+
+Tick: 78 | Satellite ID: 1
+Orbit: 1 | Cycle time: 78 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.80°C
+
+Tick: 79 | Satellite ID: 1
+Orbit: 1 | Cycle time: 79 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.65°C
+
+Tick: 80 | Satellite ID: 1
+Orbit: 1 | Cycle time: 80 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.50°C
+
+Tick: 81 | Satellite ID: 1
+Orbit: 1 | Cycle time: 81 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.35°C
+
+Tick: 82 | Satellite ID: 1
+Orbit: 1 | Cycle time: 82 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.20°C
+
+Tick: 83 | Satellite ID: 1
+Orbit: 1 | Cycle time: 83 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 31.05°C
+
+Tick: 84 | Satellite ID: 1
+Orbit: 1 | Cycle time: 84 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.90°C
+
+Tick: 85 | Satellite ID: 1
+Orbit: 1 | Cycle time: 85 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.75°C
+
+Tick: 86 | Satellite ID: 1
+Orbit: 1 | Cycle time: 86 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.60°C
+
+Tick: 87 | Satellite ID: 1
+Orbit: 1 | Cycle time: 87 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.45°C
+
+Tick: 88 | Satellite ID: 1
+Orbit: 1 | Cycle time: 88 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.30°C
+
+Tick: 89 | Satellite ID: 1
+Orbit: 1 | Cycle time: 89 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.15°C
+
+Tick: 90 | Satellite ID: 1
+Orbit: 1 | Cycle time: 90 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.80% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 30.00°C
+
+Tick: 91 | Satellite ID: 1
+Orbit: 1 | Cycle time: 91 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.40% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 29.85°C
+
+Tick: 92 | Satellite ID: 1
+Orbit: 1 | Cycle time: 92 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.00% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 29.70°C
+
+Tick: 93 | Satellite ID: 1
+Orbit: 1 | Cycle time: 93 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.60% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 29.55°C
+
+Tick: 94 | Satellite ID: 1
+Orbit: 1 | Cycle time: 94 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.20% | Capacity: 100.00% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 29.40°C
+
+Tick: 95 | Satellite ID: 1
+Orbit: 1 | Cycle time: 95 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 86.80% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 29.25°C
+
+Tick: 96 | Satellite ID: 1
+Orbit: 2 | Cycle time: 1 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.48°C
+EVENT: OrbitCompleted
+
+EVENT: EnteredSun
+
+
+Tick: 97 | Satellite ID: 1
+Orbit: 2 | Cycle time: 2 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.71°C
+
+Tick: 98 | Satellite ID: 1
+Orbit: 2 | Cycle time: 3 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 29.94°C
+
+Tick: 99 | Satellite ID: 1
+Orbit: 2 | Cycle time: 4 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.17°C
+
+Tick: 100 | Satellite ID: 1
+Orbit: 2 | Cycle time: 5 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.40°C
+
+Tick: 101 | Satellite ID: 1
+Orbit: 2 | Cycle time: 6 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.63°C
+
+Tick: 102 | Satellite ID: 1
+Orbit: 2 | Cycle time: 7 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 30.86°C
+
+Tick: 103 | Satellite ID: 1
+Orbit: 2 | Cycle time: 8 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.09°C
+
+Tick: 104 | Satellite ID: 1
+Orbit: 2 | Cycle time: 9 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.32°C
+
+Tick: 105 | Satellite ID: 1
+Orbit: 2 | Cycle time: 10 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.55°C
+
+Tick: 106 | Satellite ID: 1
+Orbit: 2 | Cycle time: 11 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 31.78°C
+
+Tick: 107 | Satellite ID: 1
+Orbit: 2 | Cycle time: 12 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.01°C
+
+Tick: 108 | Satellite ID: 1
+Orbit: 2 | Cycle time: 13 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.24°C
+
+Tick: 109 | Satellite ID: 1
+Orbit: 2 | Cycle time: 14 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.47°C
+
+Tick: 110 | Satellite ID: 1
+Orbit: 2 | Cycle time: 15 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.70°C
+
+Tick: 111 | Satellite ID: 1
+Orbit: 2 | Cycle time: 16 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 32.93°C
+
+Tick: 112 | Satellite ID: 1
+Orbit: 2 | Cycle time: 17 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.16°C
+
+Tick: 113 | Satellite ID: 1
+Orbit: 2 | Cycle time: 18 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.39°C
+
+Tick: 114 | Satellite ID: 1
+Orbit: 2 | Cycle time: 19 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.62°C
+
+Tick: 115 | Satellite ID: 1
+Orbit: 2 | Cycle time: 20 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 33.85°C
+
+Tick: 116 | Satellite ID: 1
+Orbit: 2 | Cycle time: 21 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 34.08°C
+
+Tick: 117 | Satellite ID: 1
+Orbit: 2 | Cycle time: 22 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 34.31°C
+
+Tick: 118 | Satellite ID: 1
+Orbit: 2 | Cycle time: 23 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 34.54°C
+
+Tick: 119 | Satellite ID: 1
+Orbit: 2 | Cycle time: 24 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 34.77°C
+
+Tick: 120 | Satellite ID: 1
+Orbit: 2 | Cycle time: 25 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 35.00°C
+
+Tick: 121 | Satellite ID: 1
+Orbit: 2 | Cycle time: 26 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 35.23°C
+
+Tick: 122 | Satellite ID: 1
+Orbit: 2 | Cycle time: 27 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 35.46°C
+
+Tick: 123 | Satellite ID: 1
+Orbit: 2 | Cycle time: 28 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.00% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 35.69°C
+
+Tick: 124 | Satellite ID: 1
+Orbit: 2 | Cycle time: 29 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.40% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 35.92°C
+
+Tick: 125 | Satellite ID: 1
+Orbit: 2 | Cycle time: 30 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.80% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 36.15°C
+
+Tick: 126 | Satellite ID: 1
+Orbit: 2 | Cycle time: 31 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.20% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 36.38°C
+
+Tick: 127 | Satellite ID: 1
+Orbit: 2 | Cycle time: 32 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.60% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 36.61°C
+
+Tick: 128 | Satellite ID: 1
+Orbit: 2 | Cycle time: 33 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 36.84°C
+EVENT: BatteryFull
+
+
+Tick: 129 | Satellite ID: 1
+Orbit: 2 | Cycle time: 34 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 37.07°C
+
+Tick: 130 | Satellite ID: 1
+Orbit: 2 | Cycle time: 35 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 37.30°C
+
+Tick: 131 | Satellite ID: 1
+Orbit: 2 | Cycle time: 36 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 37.53°C
+
+Tick: 132 | Satellite ID: 1
+Orbit: 2 | Cycle time: 37 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 37.76°C
+
+Tick: 133 | Satellite ID: 1
+Orbit: 2 | Cycle time: 38 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 37.99°C
+
+Tick: 134 | Satellite ID: 1
+Orbit: 2 | Cycle time: 39 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 38.22°C
+
+Tick: 135 | Satellite ID: 1
+Orbit: 2 | Cycle time: 40 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 38.45°C
+
+Tick: 136 | Satellite ID: 1
+Orbit: 2 | Cycle time: 41 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 38.68°C
+
+Tick: 137 | Satellite ID: 1
+Orbit: 2 | Cycle time: 42 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 38.91°C
+
+Tick: 138 | Satellite ID: 1
+Orbit: 2 | Cycle time: 43 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.14°C
+
+Tick: 139 | Satellite ID: 1
+Orbit: 2 | Cycle time: 44 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.37°C
+
+Tick: 140 | Satellite ID: 1
+Orbit: 2 | Cycle time: 45 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.60°C
+
+Tick: 141 | Satellite ID: 1
+Orbit: 2 | Cycle time: 46 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.83°C
+
+Tick: 142 | Satellite ID: 1
+Orbit: 2 | Cycle time: 47 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.06°C
+
+Tick: 143 | Satellite ID: 1
+Orbit: 2 | Cycle time: 48 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.29°C
+
+Tick: 144 | Satellite ID: 1
+Orbit: 2 | Cycle time: 49 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.52°C
+
+Tick: 145 | Satellite ID: 1
+Orbit: 2 | Cycle time: 50 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.75°C
+
+Tick: 146 | Satellite ID: 1
+Orbit: 2 | Cycle time: 51 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.98°C
+
+Tick: 147 | Satellite ID: 1
+Orbit: 2 | Cycle time: 52 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 41.21°C
+
+Tick: 148 | Satellite ID: 1
+Orbit: 2 | Cycle time: 53 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 41.44°C
+
+Tick: 149 | Satellite ID: 1
+Orbit: 2 | Cycle time: 54 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 41.67°C
+
+Tick: 150 | Satellite ID: 1
+Orbit: 2 | Cycle time: 55 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 41.90°C
+
+Tick: 151 | Satellite ID: 1
+Orbit: 2 | Cycle time: 56 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 42.13°C
+
+Tick: 152 | Satellite ID: 1
+Orbit: 2 | Cycle time: 57 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 42.36°C
+
+Tick: 153 | Satellite ID: 1
+Orbit: 2 | Cycle time: 58 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 42.59°C
+
+Tick: 154 | Satellite ID: 1
+Orbit: 2 | Cycle time: 59 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 42.82°C
+
+Tick: 155 | Satellite ID: 1
+Orbit: 2 | Cycle time: 60 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 43.05°C
+
+Tick: 156 | Satellite ID: 1
+Orbit: 2 | Cycle time: 61 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 43.28°C
+
+Tick: 157 | Satellite ID: 1
+Orbit: 2 | Cycle time: 62 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.99% | Capacity: 99.99% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 43.51°C
+
+Tick: 158 | Satellite ID: 1
+Orbit: 2 | Cycle time: 63 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 43.36°C
+EVENT: EnteredEclipse
+
+
+Tick: 159 | Satellite ID: 1
+Orbit: 2 | Cycle time: 64 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 99.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 43.21°C
+
+Tick: 160 | Satellite ID: 1
+Orbit: 2 | Cycle time: 65 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 43.06°C
+
+Tick: 161 | Satellite ID: 1
+Orbit: 2 | Cycle time: 66 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 98.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.91°C
+
+Tick: 162 | Satellite ID: 1
+Orbit: 2 | Cycle time: 67 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.76°C
+
+Tick: 163 | Satellite ID: 1
+Orbit: 2 | Cycle time: 68 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.61°C
+
+Tick: 164 | Satellite ID: 1
+Orbit: 2 | Cycle time: 69 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 97.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.46°C
+
+Tick: 165 | Satellite ID: 1
+Orbit: 2 | Cycle time: 70 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.31°C
+
+Tick: 166 | Satellite ID: 1
+Orbit: 2 | Cycle time: 71 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 96.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.16°C
+
+Tick: 167 | Satellite ID: 1
+Orbit: 2 | Cycle time: 72 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 42.01°C
+
+Tick: 168 | Satellite ID: 1
+Orbit: 2 | Cycle time: 73 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.86°C
+
+Tick: 169 | Satellite ID: 1
+Orbit: 2 | Cycle time: 74 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 95.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.71°C
+
+Tick: 170 | Satellite ID: 1
+Orbit: 2 | Cycle time: 75 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.56°C
+
+Tick: 171 | Satellite ID: 1
+Orbit: 2 | Cycle time: 76 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 94.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.41°C
+
+Tick: 172 | Satellite ID: 1
+Orbit: 2 | Cycle time: 77 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.26°C
+
+Tick: 173 | Satellite ID: 1
+Orbit: 2 | Cycle time: 78 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 41.11°C
+
+Tick: 174 | Satellite ID: 1
+Orbit: 2 | Cycle time: 79 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 93.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.96°C
+
+Tick: 175 | Satellite ID: 1
+Orbit: 2 | Cycle time: 80 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.81°C
+
+Tick: 176 | Satellite ID: 1
+Orbit: 2 | Cycle time: 81 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 92.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.66°C
+
+Tick: 177 | Satellite ID: 1
+Orbit: 2 | Cycle time: 82 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.51°C
+
+Tick: 178 | Satellite ID: 1
+Orbit: 2 | Cycle time: 83 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.36°C
+
+Tick: 179 | Satellite ID: 1
+Orbit: 2 | Cycle time: 84 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 91.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.21°C
+
+Tick: 180 | Satellite ID: 1
+Orbit: 2 | Cycle time: 85 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 40.06°C
+
+Tick: 181 | Satellite ID: 1
+Orbit: 2 | Cycle time: 86 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.91°C
+
+Tick: 182 | Satellite ID: 1
+Orbit: 2 | Cycle time: 87 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.76°C
+
+Tick: 183 | Satellite ID: 1
+Orbit: 2 | Cycle time: 88 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.61°C
+
+Tick: 184 | Satellite ID: 1
+Orbit: 2 | Cycle time: 89 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.46°C
+
+Tick: 185 | Satellite ID: 1
+Orbit: 2 | Cycle time: 90 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.79% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.31°C
+
+Tick: 186 | Satellite ID: 1
+Orbit: 2 | Cycle time: 91 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.39% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.16°C
+
+Tick: 187 | Satellite ID: 1
+Orbit: 2 | Cycle time: 92 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.99% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 39.01°C
+
+Tick: 188 | Satellite ID: 1
+Orbit: 2 | Cycle time: 93 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.59% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 38.86°C
+
+Tick: 189 | Satellite ID: 1
+Orbit: 2 | Cycle time: 94 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.19% | Capacity: 99.99% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 38.71°C
+
+Tick: 190 | Satellite ID: 1
+Orbit: 2 | Cycle time: 95 | Phase: EclipsePhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 86.79% | Capacity: 99.98% | Solar output: 0.00
+Ground contact: false | Mission state: Nominal | Operational mode: Idle
+Temperature: 38.56°C
+
+Tick: 191 | Satellite ID: 1
+Orbit: 3 | Cycle time: 1 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.19% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 38.79°C
+EVENT: OrbitCompleted
+
+EVENT: EnteredSun
+
+
+Tick: 192 | Satellite ID: 1
+Orbit: 3 | Cycle time: 2 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.59% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.02°C
+
+Tick: 193 | Satellite ID: 1
+Orbit: 3 | Cycle time: 3 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 87.99% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.25°C
+
+Tick: 194 | Satellite ID: 1
+Orbit: 3 | Cycle time: 4 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.39% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.48°C
+
+Tick: 195 | Satellite ID: 1
+Orbit: 3 | Cycle time: 5 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 88.79% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.71°C
+
+Tick: 196 | Satellite ID: 1
+Orbit: 3 | Cycle time: 6 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.19% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 39.94°C
+
+Tick: 197 | Satellite ID: 1
+Orbit: 3 | Cycle time: 7 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.59% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.17°C
+
+Tick: 198 | Satellite ID: 1
+Orbit: 3 | Cycle time: 8 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 89.99% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.40°C
+
+Tick: 199 | Satellite ID: 1
+Orbit: 3 | Cycle time: 9 | Phase: SunPhase | Altitude: 500.0 km | Period: 94.6 min
+Battery: 90.39% | Capacity: 99.98% | Solar output: 1.20
+Ground contact: false | Mission state: Nominal | Operational mode: Charging
+Temperature: 40.63°C

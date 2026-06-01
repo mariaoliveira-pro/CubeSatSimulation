@@ -6,7 +6,6 @@ use crate::satellite::OperationalMode;
 pub struct EnergyModel {
     pub battery_level: f32,
     pub solar_panel_output: f32,
-    pub consumption_rate: f32,
     pub degradation_rate: f32,
     pub max_capacity: f32,
 }
@@ -16,14 +15,17 @@ impl EnergyModel {
         Self {
             battery_level: 100.0,
             solar_panel_output: 0.0,
-            consumption_rate: 1.0,
             degradation_rate: 0.01,
             max_capacity: 100.0,
         }
     }
 
-    pub fn update(&mut self, orbital_model: &orbital::OrbitalModel, operational_mode: &OperationalMode, event_bus: &mut EventBus) {
-
+    pub fn update(
+        &mut self,
+        orbital_model: &orbital::OrbitalModel,
+        operational_mode: &OperationalMode,
+        event_bus: &mut EventBus,
+    ) {
         let previous_battery_level = self.battery_level;
 
         if orbital_model.orbit_completed() {
@@ -31,20 +33,20 @@ impl EnergyModel {
             self.max_capacity = self.max_capacity.max(0.0);
         }
 
-        let extra_consuption = match operational_mode {
-            OperationalMode::Transmitting => 0.5,
-            _ => 0.0,
+        let mode_consumption = match operational_mode {
+            OperationalMode::Idle => 0.4,
+            OperationalMode::Charging => 0.8,
+            OperationalMode::Transmitting => 1.8,
         };
 
         match orbital_model.phase {
             orbital::OrbitalPhase::SunPhase => {
-                self.solar_panel_output = 1.2; 
-                self.battery_level =
-                    self.battery_level + self.solar_panel_output - self.consumption_rate - extra_consuption;
+                self.solar_panel_output = 1.2;
+                self.battery_level = self.battery_level + self.solar_panel_output - mode_consumption;
             }
             orbital::OrbitalPhase::EclipsePhase => {
                 self.solar_panel_output = 0.0;
-                self.battery_level = self.battery_level - self.consumption_rate - extra_consuption;
+                self.battery_level = self.battery_level - mode_consumption;
             }
         }
 
@@ -52,15 +54,12 @@ impl EnergyModel {
 
         if previous_battery_level > 10.0 && self.battery_level <= 10.0 {
             event_bus.emit(Event::BatteryCritical);
-        } else
-
-        if previous_battery_level > 30.0 && self.battery_level <= 30.0 {
+        } else if previous_battery_level > 30.0 && self.battery_level <= 30.0 {
             event_bus.emit(Event::BatteryLow);
         }
 
         if previous_battery_level < self.max_capacity && self.battery_level >= self.max_capacity {
             event_bus.emit(Event::BatteryFull);
         }
-
     }
 }

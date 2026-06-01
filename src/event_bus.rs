@@ -10,6 +10,7 @@ pub enum Event {
     GroundStationContactEnded,
     TransmissionSuccess,
     TransmissionFailed,
+    TemperatureCritical,
 }
 
 pub struct EventBus {
